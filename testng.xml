@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5"   name="Test"   >
+		
+	<classes>
+                    <!-- Admin -->
+	  <class name="dayamedHealth.AdminHomePage"/>
+	   <class name="dayamedHealth.AdminAddProviderLink"/>
+			<class name="dayamedHealth.AdminEditProviderData" />
+			<class name="dayamedHealth.AdminCareGiver"/>
+			<class name="dayamedHealth.AdminProvidersEditPatient"/>
+			<class name="dayamedHealth.AdminProviderViewPatients"/> 
+			<class name="dayamedHealth.AdminReportsLink"/>  
+                                
+                                   <!-- Pharmacist -->
+     <class name="dayamedHealth.Pharmacist"/> 
+        <class name="dayamedHealth.PharmacitAddPrescription"/>
+         <class name="dayamedHealth.PharmacistEditPatient"/>           
+			<class name="dayamedHealth.PharmacistPatientViewPrescription"/> 		
+            <class name="dayamedHealth.PharmacistPatientNotifications"/> 
+          <class name="dayamedHealth.PharmacistZoomCall"/> 
+          <class name="dayamedHealth.PharmacistPatientReports"/>   
+
+
+                             <!-- PharamacistAdmin -->
+
+      <class name="dayamedHealth.PhramacistAdminLoginPage"/> 
+         <class name="dayamedHealth.PharmacitAdmiAddPrescription"/>
+         <class name="dayamedHealth.PharmacistAdminAddPatient"/> 
+         <class name="dayamedHealth.PharmacistAdminPatientViewPrescription"/> 
+        <class name="dayamedHealth.PharmacistAdminPatientReports"/> 
+        <class name="dayamedHealth.PharmacistAdminPatientNotifications"/> 
+       <class name="dayamedHealth.PharmacistAdminZoomCall"/>   
+
+
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
